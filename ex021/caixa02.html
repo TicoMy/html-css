@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(151, 156, 156);
+      margin: 0px;
+    }
+    header{
+      padding: 10px;
+      background-color: azure;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    header > h1{
+      text-shadow: 2px 2px 0px rgb(190, 187, 187);
+    }
+    nav{
+      background-color: rgb(181, 181, 252);
+      padding: 3px;
+      text-align: center;
+      width: 270px;
+      margin: auto;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.513);
+    }
+    nav > a{
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+      margin-right: 15px;
+      transition: all 0.27s ease-in-out;
+      
+    }
+    nav > a:hover{
+      color: blueviolet;
+    }
+    article{
+      background-color: rgb(204, 206, 207);
+      padding: 5px;
+      border-radius: 5px;
+    }
+    article > aside{
+      background-color: rgb(118, 116, 116);
+      width: 300px;
+      text-align: center;
+      border-radius: 3px;
+    }
+    main{
+      background-color: azure;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px 40px;
+
+    }
+    footer{
+      background-color: rgb(22, 22, 22);
+      padding: 5px;
+      color: aliceblue;
+      border-radius: 5px;
+      margin: 1px;
+      text-align: center;
+    }
+
+    footer > p{
+      margin: 0px;
+    }
+
+    div#bola{
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+   <header>
+<!--cabeçalho. -->
+   <h1>Meu Site</h1>
+   <nav>
+    <!--grupo de links-->
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+   </nav>
+
+   </header>
+
+   <main>
+     <!--conteudo principal-->
+     <section id="assunto"> <!--sessao-->
+      <p>Esportes Política Tecnologia</p>
+       <article id="noticias"><!--artigo-->
+        <h2>Noticias sobre o Brasil</h2>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero deserunt quae, quam eos ullam vitae molestiae quia sapiente asperiores omnis sed adipisci nam atque soluta facilis ipsum. Culpa, illo aut.</p>
+         <aside><!--periférico ao conteudo principal-->
+          <p>Artigo escrito por José da Silva</p>
+         </aside>
+       </article>
+     </section>
+     <section>
+
+     </section>
+
+   </main>
+
+   <footer>
+     <!--Rodapé-->
+     <p>Desenvolvido pelo curso em vídeo</p>
+   </footer>
+
+   <div id="bola"></div>
+</body>
+</html>

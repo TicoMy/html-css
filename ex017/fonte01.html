@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Fontes</title>
+
+  <style>
+    body{
+      font-family: 'Times New Roman', Times, serif;
+      /*safes combinations(se não achar uma fonte, vai para outra)*/
+    }
+/*posso juntar duas coisas atraves de virgula*/
+    h1, h2{
+      font-family: 'Times New Roman', Times, serif;
+
+     /* font-style: italic;
+      font-weight: bolder;
+      font-size: em;
+      font-family:sans-serif;
+      text-decoration: underline;*/
+
+      /*O weight tem váriações de: lighter, normal, bold e bolder */
+
+      font: bolder 2em Arial
+      /* uma linha que simplifica várias coisas se chama 'SHORTHAND'*/
+    }
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus quis officiis itaque mollitia ut, ex est dolor totam commodi officia provident libero culpa, amet corrupti maxime molestiae voluptas iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quibusdam minus beatae iste deleniti odio vero fuga eum dolore dolorum sunt quia magnam, nobis eius repellat cum. Quisquam, autem! Beatae!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam deleniti totam beatae quia eius officia labore distinctio fugit modi quae, eveniet deserunt dolor perspiciatis ad, non unde quis a ratione.</p>
+  <h2>Subtitulo do exercicio</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga cupiditate doloremque corporis corrupti dicta tempore quibusdam dolorem. Non eius delectus sunt, itaque at enim quam nobis modi, repellat, rerum corporis.</p>
+  
+
+
+
+<script>
+  
+  var n1 = Number.parseInt(window.prompt('Digite um valor: '))
+  n1.toLocaleString('pt-BR',{style: 'currency', currency:'BRL'})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste01</title>
+  <style>
+    
+    div.menu{
+      display: flex;
+      justify-content: end;
+      
+      background-color: aqua;
+
+    }
+    div.menu > ul{
+      display: none;
+
+    }
+    .menu:hover > ul{
+      display: block;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="menu">
+    Menu
+    <ul>
+      <li>gaveta</li>
+      <li>opções</li>
+      <li>ajuda</li>
+      <li>nossas redes</li>
+      <li>outros...</li>
+    </ul>
+  </div>
+
+  <div id="botao" onclick="apertar()">
+    botao
+  </div>
+
+  <script>
+    function apertar(){
+      var a = window.document.getElementById('botao')
+      a.innerHTML = 'apertado'
+    }
+  </script>
+</body>
+</html>

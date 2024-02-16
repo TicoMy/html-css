@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usando hover</title>
+  <style>
+    body{ font-family: Arial, Helvetica, sans-serif;
+    }
+
+div > p{
+  display: none;
+}
+
+div#oi:hover > p{
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: aqua;
+  width: 300px;
+  border-radius: 5px;
+} 
+
+    div#oi:hover{
+
+color: brown;
+
+    }
+
+    .compras:hover > ul {
+      display: block;
+      color: blueviolet;
+      background-color: rgb(146, 146, 245);
+      width: 300px;
+      border-radius: 5px;
+    }
+
+.compras > ul{
+  display: none;
+}
+
+
+  </style>
+</head>
+<body>
+  
+  <h1>Exemplo de Hover</h1>
+<p>Passe o <abbr title="PERIFÉRICO">mouse</abbr> sobre o texto abaixo</p>
+  <div id="oi">
+    Passe o mouse aqui
+     <p>TEXTO ESCONDIDO!</p>
+     <p>oi</p>
+     <p>tudo bem?</p>
+  </div>
+  <p>Fim do Exemplo</p>
+<h1>Lista de compras</h1>
+
+<div class="compras">
+  Compras no Mercado
+  <ul type="square">
+    <li>Banana</li>
+    <li>Macarão</li>
+    <li>Batata</li>
+  </ul>
+</div>
+</body>
+</html>

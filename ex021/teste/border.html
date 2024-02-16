@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhando com Bordas</title>
+
+  <style>
+    body{
+      margin: 0px;
+      background-color: rgb(255, 222, 222);
+    }
+
+    main{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    section#quasebola{
+      border: 2px solid black;
+      height: 200px;
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px 40px;
+      background-color: aliceblue;
+    }
+
+    section#quasebola2{
+      border: 2px solid black;
+      height: 200px;
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px 40px;
+      background-color: white;
+    }
+
+    div#bola{
+      height: 400px;
+      width: 400px;
+      margin: auto;
+      border: 2px solid rgba(0, 0, 0, 0.609);
+      border-radius: 50%;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section id="quasebola"></section>
+    <section id="quasebola2"></section>
+  </main>
+
+  <div id="bola"></div>
+</body>
+</html>
