@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste de fundo</title>
+  <style>
+    body{
+    
+      box-sizing: border-box;
+      height: 98vh;
+    }
+
+    div#container{
+      position: relative;
+      border: 1px solid black;
+      border-radius: 7px;
+      width: 500px;
+      height: 400px;
+      background-color: rgb(255, 255, 255);
+
+    }
+    div.bola{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      border: 25px solid rgb(41, 41, 41);
+      background-color: red;
+      width: 200px;
+      height: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <section>
+      <article>
+        <div id="container">
+          <div class="bola"></div>
+        </div>
+      </article>
+
+      <h1>texto decorativo</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quas ipsa neque voluptas eos veniam incidunt. Natus quos, illo sit quidem error debitis, nam architecto veniam perferendis totam sed quas?</p>
+  </section>
+</body>
+</html>
