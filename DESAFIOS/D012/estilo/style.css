@@ -58,12 +58,22 @@ section{
   font-size: 3.5vw;
 }
 
+section > p{
+  padding-bottom: 3em;
+}
+
 section#img1{
   background: url('../imagens/background001.jpg') center center no-repeat fixed;
   background-size: cover;
 }
 
+section#img2{
+  background: url('../imagens/background002.jpg') right center no-repeat fixed;
+  background-size: cover;
+}
+
 section.img > p{
+  text-shadow: 1px 1px 0px black;
   display: inline-block;
   padding: 5px;
   border-radius: 5px;
@@ -75,6 +85,7 @@ section.normal{
 }
 
 section.img{
+  box-shadow: inset 5px 5px 7px 0px rgba(0, 0, 0, 0.325);
   background-color: rgb(60, 60, 60);
   color: white;
 }
