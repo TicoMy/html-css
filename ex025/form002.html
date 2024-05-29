@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>teste de formulario</title>
+  <style>
+    div{
+      position: relative;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      
+      background-color: royalblue;
+    }
+    div p{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    }
+  </style>
+</head>
+<body>
+  <h1>Teste de formulario</h1>
+  <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+      <label>
+        Nome:
+        <input type="text" name="inome" id="inome" required minlength="5" maxlength="10" size="10" placeholder="Nome de usuario" autocomplete="username">
+      </label>
+    </p>
+    <p><label>
+      Senha:
+      <input type="password" name="isenha" id="isenha" required minlength="8" maxlength="15" size="15" placeholder="password" autocomplete="current-password">
+    </label></p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" name="ilimpa" id="ilimpa" value="Limpar">
+    </p>
+  </form>
+  <div id="res" onclick="mudar()">
+    <p>oi</p>
+  </div>
+
+  <script>
+    function mudar(){
+      res = document.getElementById('res')
+      res.innerHTML = 'cliclou'
+    }
+  </script>
+</body>
+</html>
