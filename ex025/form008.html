@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <title>output</title>
+</head>
+<body>
+  <form action="cadastro.php" method="get">
+    <p>
+      <label>Numero 1: 
+        <input type="number" name="num" id="inum1" min="0" max="50" required oninput="iout.innerHTML = Number(inum1.value) + Number(inum2.value) ">
+      </label>
+    </p>
+    <p>
+      <label>Numero 2: 
+        <input type="number" name="num" id="inum2" min="0" max="50" required oninput="iout.innerHTML = Number(inum1.value) + Number(inum2.value)">
+      </label>
+    </p>
+    <p>
+      <label>Soma:
+        <output name="out" id="iout">0</output>
+      </label>
+    </p>
+    <p>
+      <input type="submit">
+      <input type="reset">
+    </p>
+  </form>
+</body>
+</html>

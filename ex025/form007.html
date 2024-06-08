@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textarea, datalist r select </title>
+</head>
+<body>
+  <form action="cadastro.php" method="get">
+    <P>
+      <label >Estado:
+        <select name="sel" id="isel">
+
+          <optgroup label="Região">
+            <option value="SP">São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="Am">Amazonas</option>
+          </optgroup>
+
+        </select>
+      </label>
+    </P>
+    <p>
+      <label>Profissão:
+        <input type="
+        text" list="list">
+      </label>
+      <datalist id="list">
+        <option value="DEV">Desenvolvedor</option>
+        <option value="Prof">Professor</option>
+      </datalist>
+    </p>
+    <p>
+      <label>Comentario:
+        <textarea name="i" id="i"></textarea>
+      </label>
+    </p>
+    <p>
+      <input type="submit">
+      <input type="reset">
+    </p>
+  </form>
+</body>
+</html>

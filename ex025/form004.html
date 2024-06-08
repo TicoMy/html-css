@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telefone e e-mail</title>
+</head>
+<body>
+  <form action="cadastro.php" method="post"   autocomplete="on">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <p>
+        <label>E-mail:
+          <input type="email" required autocomplete="email" placeholder="exemplo@email.com">
+        </label>
+      </p>
+      <p>
+         <label for="dtel">Telefone</label>
+        <input type="tel" name="itel" id="dtel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx">
+      
+      </p>
+    </fieldset>
+    <p>
+      <input type="submit">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>

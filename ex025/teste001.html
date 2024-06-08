@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  <title>Teste</title>
+</head>
+<body>
+  <form action="cadastro.php" method="get">
+    <p><label>Estados:</label>
+      <SELect>
+        <optgroup label="Estados">
+          <option value="MG">Minas Gerais</option>
+          <option value="AM">Amazonas</option>
+          <option value="MA">Maranhão</option>
+          <option value="TO">Tocantins</option>
+        </optgroup>
+        <optgroup label="Capitais">
+  
+          <option value="MA">Manaus</option>
+          <option >Belo Horizonte</option>
+          <option>Palmas</option>
+        </optgroup>
+      </SELect>    
+    </p>
+    <p>
+      <label>Profissões: </label>
+      <input type="text" name="data" id="idata" list="list">
+      <datalist id="list">
+        <option value="DEV">Desenvolvedor</option>
+        <option value="Prof">Professor</option>
+        <option value="MEc">Mecanico</option>
+      </datalist>
+    </p>
+    <p>
+      <label id="com">Comentario</label>
+      <textarea name="" id="com"></textarea>
+    </p>
+    <p>
+      <input type="submit">
+      <input type="reset">
+    </p>
+  </form>
+</body>
+</html>

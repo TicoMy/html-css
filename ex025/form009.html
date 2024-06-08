@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste output</title>
+</head>
+<body>
+  <form action="cadastro.php" method="get">
+    <p>
+      <label>Numero:
+        <input type="range" id="iran" max="10" oninput="ival.innerHTML = Number(iran.value)">
+        <output id="ival">5</output>
+      </label>
+    </p>
+    <p><input type="submit">
+      <input type="reset">
+    </p>
+  </form>
+</body>
+</html>
