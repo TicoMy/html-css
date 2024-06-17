@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-/*MEDIA LANDSCAPE*/
+/*MEDIA PORTRAIT*/
+
+body{
+  background:url('../imagens/cev-portrait.jpg') no-repeat top center fixed;
+  background-size: contain;
+}
